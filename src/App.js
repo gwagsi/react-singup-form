@@ -1,12 +1,11 @@
-import logo from './logo.svg';
-import Signup from './components/Signup';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { Signup } from "./components/Signup";
 
 function App() {
   return (
     <div className="App">
-      
-        <Signup/>
-
+      <Signup />
     </div>
   );
 }
