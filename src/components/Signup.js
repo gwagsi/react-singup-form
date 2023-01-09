@@ -1,5 +1,5 @@
 import React from 'react';
-import { Formik, Form } from 'formik';
+import { Formik, Form, Field } from 'formik';
 import { TextField } from './TextField';
 
 
@@ -31,8 +31,14 @@ export  const Signup = () => {
             <TextField label="Email" name="email" type="email" />
       
             <TextField label="Phone Number" name="PhoneNumber" type="text" />
-            <button className="btn btn-danger mt-3 ml-3" type="checkbox">I agree to <a href='#'>data privacy</a> terms</button>
-            <button className="btn btn-dark mt-3" type="submit">create Account</button>
+            <label>
+              <Field type="checkbox" name="checked" value="agre" />
+              I agree to <a href='#'>data privacy</a> terms
+            </label> 
+            <div><button className="btn btn-dark mt-3" type="submit">create Account</button></div>
+            
+            {/* <input className="btn btn-danger mt-3 ml-3" type="checkbox">I agree to <a href='#'>data privacy</a> terms</input> */}
+            
           
           </Form>
         </div>
