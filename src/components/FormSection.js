@@ -6,16 +6,22 @@ export default class FormSection extends Component {
   render() {
     return (
       <div className="main-signup">
-         <div className="floating-image"><img src={pic2} /></div>
-        <div className="promo-section1"><p>Getting</p>
-        <p>Started With</p>
-        <p>Level 5 Fleet</p></div>
-        <div className="promo-section2"><p>Getting</p>
-        <p>Monthly</p>
-        <p>subscribtion</p> <p>per device</p>
-        <br/>
-        <p>$10</p></div>
-       
+        <div className="floating-image">
+          <img src={pic2} />
+        </div>
+        <div className="promo-section1">
+          <p>Getting</p>
+          <p>Started With</p>
+          <p>Level 5 Fleet</p>
+        </div>
+        <div className="promo-section2">
+        
+          <p>Monthly</p>
+          <p>subscribtion</p> <p>per device</p>
+          <br />
+          <p>$10</p>
+        </div>
+
         <div className="signup-section">
           <div className="top-bar">
             <img src={pic1} className="top-flex" />
@@ -23,11 +29,8 @@ export default class FormSection extends Component {
           </div>
 
           <Signup />
-          <p>
-            Already have an account? <a href="#">Log In</a>
-          </p>
+   
         </div>
-        
       </div>
     );
   }

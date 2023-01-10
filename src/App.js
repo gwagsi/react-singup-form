@@ -5,7 +5,7 @@ import FormSection from './components/FormSection';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       
       <FormSection/>
     </div>

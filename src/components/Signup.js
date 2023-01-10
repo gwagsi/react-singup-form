@@ -20,7 +20,7 @@ export  const Signup = () => {
       }} */
     >
       {formik => (
-        <div>
+        <div className='form'>
           <h1 className="my-4 font-weight-bold .display-4">Create an Account</h1>
           <Form>
             <TextField label="scac" name="scac" type="text" />
@@ -32,15 +32,18 @@ export  const Signup = () => {
       
             <TextField label="Phone Number" name="PhoneNumber" type="text" />
             <label>
-              <Field type="checkbox" name="checked" value="agre" />
-              I agree to <a href='#'>data privacy</a> terms
+              <Field type="checkbox" name="checked" value="agre"/>
+               I agree to <a href='#'>data privacy</a> terms
             </label> 
-            <div><button className="btn btn-dark mt-3" type="submit">create Account</button></div>
+            <div><button className="btn btn-dark mt-3" type="submit">Create Account</button></div>
             
             {/* <input className="btn btn-danger mt-3 ml-3" type="checkbox">I agree to <a href='#'>data privacy</a> terms</input> */}
             
           
           </Form>
+          <p>
+            Already have an account? <a href="#">Log In</a>
+          </p>
         </div>
       )}
     </Formik>

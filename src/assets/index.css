@@ -1,13 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  }
+
+label {
+  font-size: .7rem;
+}
+
+input.form-control, input.form-control:focus {
+  background: #F0F0FF;
+}
+
+.error {
+  position: absolute;
+  color: red;
+  font-size: .6rem;
+}
 label{
   text-align: left;
 }
+.form{
+  padding: 20px 10em 20px 10em; 
+}
+.form >p{
+  text-align:center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.btn{
+  width: 100%;
+  height: 50px;
+}
+
 .signup-section{
   border-radius: 25px;
   padding: 20px;
-  border-style: solid;
-  border-width: 0.2px;
   background-color: white;
   padding-top: 0%;
+
 /*   width: 200px;
   height: 150px; */
   grid-row: 1/4;
@@ -16,6 +47,7 @@ label{
 
 .top-bar{
   display: flex;
+  justify-content: space-between;
 
 }
 
@@ -23,34 +55,68 @@ label{
   grid-row: 1/2;
   grid-column: 1/4;
   border-radius: 25px;
-  padding: 20px;
+  padding-left: 10%;
+  padding-right: 30px;
+  padding-top: 40px;
 }
 .promo-section2{
   grid-row: 3/4;
   grid-column: 1/4;
   border-radius: 25px;
   padding: 20px;
+  background-color: aqua;
+  align-content: center;
 }
 .main-signup{
   display: grid;
-  grid-template-columns: auto 5% 5% 55% ;
+  width: 1400px;
+  grid-template-columns: 350px 100px 150px 800px ;
   grid-template-rows: 25% 50% 25%;
   column-gap: 1px;
   row-gap: 2px;
   margin: 10px;
   border-radius: 25px;
-  background-color: gray;
+  background-color: rgb(129, 134, 137);
+  border-style: solid;
+  border-width: 1px;
+  padding-top: 0%;
+  border-color: #9ecaed;
+  box-shadow: 0 0 10px #9ecaed;
+  margin: 0 auto;
 
 }
 .floating-image{
   grid-row: 2/3;
   grid-column: 1/3;
   z-index: 1;
+  padding-left: 300px;
+  background-color: blue;
 }
 .floating-image> img {
   object-fit: cover;
-  width: 100%;
-  max-height: 100%;
+  max-height: 70%;
   transform: rotate(-20deg);
   padding-top: 30px;
+  float: right;
+}
+
+.promo-section2 p, .promo-section1 p{
+  font-size : 38px;
+color: white;
+  padding : 0;
+  margin : 0;
+  line-height : 43px;
+
+}
+.promo-section2 p{text-align:center;
+  padding-right: 250px;
+background-color: red;}
+
+.app{
+  background-color: red;
+  width: 100%;
+  margin: 0 auto;
+}
+.form h1{
+  text-align: center;
 }
