@@ -96,15 +96,14 @@ label{
   grid-row: 2/3;
   grid-column: 1/3;
   z-index: 1;
-  padding-left: 300px;
-  
 }
 .floating-image> img {
   object-fit: cover;
   max-height: 70%;
   transform: rotate(-20deg);
-  padding-top: 30px;
   float: right;
+
+  padding-top: 10%;
 }
 
 .promo-section2 p, .promo-section1 p{
@@ -158,6 +157,7 @@ a:link { text-decoration: none; }
 button{
   font-size: 30px !important;
   padding-bottom: 55px !important;
+ background-color: #413f3f !important;
  
 }
 
