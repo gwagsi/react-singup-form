@@ -25,7 +25,7 @@ export default class FormSection extends Component {
         <div className="signup-section">
           <div className="top-bar">
             <img src={pic1} className="top-flex" />
-            <div className="top-flex">English(UK)s</div>
+            <div className="top-flex top-flex1">English(UK)s</div>
           </div>
 
           <Signup />

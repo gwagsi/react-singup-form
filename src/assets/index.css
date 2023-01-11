@@ -9,7 +9,13 @@ label {
 }
 
 input.form-control, input.form-control:focus {
-  background: #F0F0FF;
+  background: #ffffff;
+  border-top-style: hidden !important;
+  border-right-style: hidden !important;
+  border-left-style: hidden !important;
+  border-bottom-style: outset !important;
+  border-bottom: 1px solid #d9d9d9 !important;
+  background-color: white !important;
 }
 
 .error {
@@ -60,12 +66,13 @@ label{
   padding-top: 40px;
 }
 .promo-section2{
-  grid-row: 3/4;
+  grid-row: 2/4;
   grid-column: 1/4;
   border-radius: 25px;
   padding: 20px;
-  background-color: aqua;
   align-content: center;
+  padding-top: 400px;
+  margin-top: 0px;
 }
 .main-signup{
   display: grid;
@@ -90,7 +97,7 @@ label{
   grid-column: 1/3;
   z-index: 1;
   padding-left: 300px;
-  background-color: blue;
+  
 }
 .floating-image> img {
   object-fit: cover;
@@ -110,13 +117,75 @@ color: white;
 }
 .promo-section2 p{text-align:center;
   padding-right: 250px;
-background-color: red;}
-
+}
 .app{
-  background-color: red;
   width: 100%;
   margin: 0 auto;
 }
 .form h1{
   text-align: center;
+}
+
+.input {
+ 
+  
+}
+.mb-2 label{
+    color: rgb(15, 88, 131);
+    font-weight: bold;
+    display: block;
+    float: left;
+    font-size: 19px;
+    
+}
+.checked{
+  padding-top: 45px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #6e6969;
+  line-height: 1.1;
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.5em;
+}
+h1{
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #6e6969;
+}
+a:link { text-decoration: none; }
+
+button{
+  font-size: 30px !important;
+  padding-bottom: 55px !important;
+ 
+}
+
+.login-option{
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #6e6969;
+}
+
+.top-flex1{
+  padding-top: 30px;
+}
+
+
+
+
+.inputWithIcon {
+  position: relative;
+}
+
+.icon{
+  position: absolute;
+  left: 98%;
+  width: 35px;
+  height: 35px;
+  margin-top: 20px;
+ color: #6e6969;}
+
+#inputWithIcon > input {
+  padding-left: 40px;
 }
