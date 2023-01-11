@@ -1,33 +1,51 @@
 import React from 'react';
 import { Formik, Form, Field } from 'formik';
 import { TextField } from './TextField';
+import * as Yup from 'yup';
 
 
 export  const Signup = () => {
+  const validate = Yup.object({  
+    scac: Yup.string()
+    .min(3, 'Must be 15 characters or less')
+    .max(15, 'Must be 15 characters or less')
+    .required('Required'),
+    userName: Yup.string()
+      .max(20, 'Must be 20 characters or less')
+      .required('Required'),
+    email: Yup.string()
+      .email('Email is invalid')
+      .required('Email is required'),
+    password: Yup.string()
+      .min(6, 'Password must be at least 6 charaters')
+      .required('Password is required'),
+    })
+  
   
   return (
     <Formik
       initialValues={{
-        firstName: '',
-        lastName: '',
+        scac: '',
+        companyName: '',
         email: '',
         password: '',
-        confirmPassword: '',
+        userName: '',
+        address: '',
         iconState:'hidden'
       }}
-      /* validationSchema={validate}
+      validationSchema={validate}
       onSubmit={values => {
         console.log(values)
-      }} */
+      }} 
     >
       {formik => (
         <div className='form'>
           <h1 className="my-4 font-weight-bold .display-4">Create an Account</h1>
           <Form>
             <TextField label="SCAC" name="scac" type="text" iconState="hidden"/>
-            <TextField label="Company Name" name="CompanyName" type="text" iconState="hidden"/>
-            <TextField label="Address" name="Address" type="text" iconState="hidden"/>
-            <TextField label="Username" name="Username" type="text" iconState="hidden"/>
+            <TextField label="Company Name" name="companyName" type="text" iconState="hidden"/>
+            <TextField label="Address" name="address" type="text" iconState="hidden"/>
+            <TextField label="Username" name="userName" type="text" iconState="hidden"/>
             <TextField label="password" name="password" type="password"  icon="<AiFillLock/>"/>
             <TextField label="Email" name="email" type="email" iconState="hidden"/>
       
